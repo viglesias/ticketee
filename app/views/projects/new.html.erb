@@ -1,7 +1,1 @@
-<%=form_for @project do |f|%>
-   <p>
-      <%= f.label :name, "Name"%>
-      <%= f.text_field :name%>
-   </p>
-   <%=f.submit "Create Project"%>
-<%end%>
+<%= render :partial => 'form' %>
