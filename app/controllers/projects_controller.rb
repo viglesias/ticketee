@@ -11,6 +11,7 @@ class ProjectsController < ApplicationController
     redirect_to @project
   end
   def show
+    debugger
     @project = Project.find(params[:id])
   end
 
