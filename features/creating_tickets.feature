@@ -25,3 +25,19 @@ Feature: Creating Tickets
     When I fill in "Title" with "Non-standards compliance"
     And I fill in "Description" with "it sucks"
 
+  Scenario: Creating a ticket by a user
+    Given there is a project called "Internet Explorer"
+    And there are the following users:
+      | email             | password |
+      | user@ticketee.com | password |
+    And I am on the homepage
+    When I follow "Internet Explorer"
+    And I follow "New Ticket"
+    Then I should see "You need to sign in or sign up before continuing."
+    When I fill in "Email" with "user@ticketee.com"
+    And I fill in "Password" with "password"
+    And I press "Sign in"
+    Then I should see "New Ticket"
+
+
+
