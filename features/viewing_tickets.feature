@@ -27,4 +27,4 @@ Feature: Viewing tickets
     And I should not see "Make it shiny!"
     When I follow "Standards compliance"
     Then I should see "Standards compliance" within "#ticket h2"
-    And I should see "Isn't a joke."
+    And I should see "Isn’t a joke."
