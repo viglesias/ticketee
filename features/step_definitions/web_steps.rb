@@ -67,6 +67,12 @@ Then /^(?:|I )should be on (.+)$/ do |page_name|
   end
 end
 
+When /^I check "([^"]*)"$/ do |text|
+  check text
+end
+
+
+
 
 
 
