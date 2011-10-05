@@ -50,6 +50,7 @@ Ticketee::Application.routes.draw do
   #     resources :products
   #   end
   namespace :admin do
+    root :to => "base#index"
     resources :users
   end
   # You can have the root of your site routed with "root"
