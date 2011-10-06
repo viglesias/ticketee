@@ -70,6 +70,11 @@ end
 When /^I check "([^"]*)"$/ do |text|
   check text
 end
+When /^(?:|I )attach the file "([^\"]*)" to "([^\"]*)"(?: within "([^\"]*)")?$/ do |path, field, selector|
+  with_scope(selector) do
+    attach_file(field, Rails.root + path)
+  end
+end
 
 
 
