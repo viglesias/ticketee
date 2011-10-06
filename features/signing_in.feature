@@ -13,3 +13,4 @@ Feature: Signing in
     And I fill in "Password" with "password"
     And I press "Sign in"
     Then I should see "Signed in successfully."
+
